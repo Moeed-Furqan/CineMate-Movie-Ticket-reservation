@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="movie_styling.css">
-    <title>
-        CINEMATE
-    </title>
+    <title>CINEMATE</title>
 </head>
 
 <body>
@@ -26,10 +24,8 @@
             </div>
         </div>
 
-
         <div class="left">
-
-            <div class="bg-img">
+            <div class="bg-img" style="background-attachment: fixed;">
                 <div class="header">
                     <h1>Jumanji</h1>
                     <div class="time">
@@ -39,38 +35,37 @@
                 </div>
                 <div class="date_type">
                     <div class="left_card">
-                        <h6 class="title">Saturday 12 December</h6>
+                        <h6 class="title">December 2023</h6>
                         <div class="month">
                             <li>
-                                <h6>Mon</h6>
-                                <h6 class="date">11</h6>
-                            </li>
-                            <li>
-                                <h6>Tue</h6>
-                                <h6 class="date">12</h6>
-                            </li>
-                            <li>
-                                <h6>Wed</h6>
-                                <h6 class="date">13</h6>
-                            </li>
-                            <li>
-                                <h6>Thu</h6>
-                                <h6 class="date">14</h6>
-                            </li>
-                            <li>
                                 <h6>Fri</h6>
-                                <h6 class="date">15</h6>
+                                <h6>22</h6>
                             </li>
                             <li>
                                 <h6>Sat</h6>
-                                <h6 class="date">16</h6>
+                                <h6>23</h6>
                             </li>
                             <li>
                                 <h6>Sun</h6>
-                                <h6 class="date h6_active">17</h6>
+                                <h6>24</h6>
+                            </li>
+                            <li>
+                                <h6>Mon</h6>
+                                <h6>25</h6>
+                            </li>
+                            <li>
+                                <h6>Tue</h6>
+                                <h6>26</h6>
+                            </li>
+                            <li>
+                                <h6>Wed</h6>
+                                <h6>27</h6>
+                            </li>
+                            <li>
+                                <h6>Thu</h6>
+                                <h6>28</h6>
                             </li>
                         </div>
-
                     </div>
                     <div class="right_card">
                         <h6 class="r_title">Show Time</h6>
@@ -98,10 +93,7 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="Screen">
-                    Screen
-                </div>
+                <div class="Screen">Screen</div>
                 <div class="Chairs">
                     <div class="row">
 
@@ -219,7 +211,9 @@
                         <li class="seats">99</li>
                         <li class="seats">100</li>
                     </div>
+                    <!-- Add more rows of seats as needed -->
                 </div>
+                
                 <div class="details" id="del">
                     <div class="del_chairs">
                         <li>Available</li>
@@ -227,22 +221,45 @@
                         <li>Selected</li>
                     </div>
                 </div>
+                
+                 
                 <button class="Next" >
                     <i class="bi bi-arrow-right-short"></i>
                 </button>
+                <!-- <button class="Next" id="back">
+                    <i class="bi bi-arrow-left-short"></i>
+                </button>  -->
+                <div class="tickets">
+                    <!-- Ticket information will be dynamically added here using JavaScript -->
+                </div>
             </div>
-            <!-- <div class="Video_player">
-                <video src="videos\JUMANJI_ WELCOME TO THE JUNGLE - Official Trailer (HD).mp4" id="video"
-                    autoplay></video>
-            </div> -->
         </div>
-
-
-
-
     </div>
 
-    <script src="movie_script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var playButton = document.getElementById("play");
+
+            playButton.addEventListener("click", function () {
+                // Replace 'VIDEO_ID' with the actual ID of your YouTube video
+                var videoId = '2QKg5SZ_35I';
+
+                // Construct the YouTube video URL
+                var videoUrl = 'https://www.youtube.com/watch?v=' + videoId;
+
+                // Open the video in a new tab or window
+                window.open(videoUrl, '_blank');
+            });
+        });
+    </script>
+     
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.6/JsBarcode.all.js"
+        integrity="sha512-wkHtSbhQMx77jh9oKL0AlLBd15fOMoJUowEpAzmSG5q5Pg9oF+XoMLCitFmi7AOhIVhR6T6BsaHJr6ChuXaM/Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+    <script src="movie_styling.js"></script>
+
 </body>
 
 </html>

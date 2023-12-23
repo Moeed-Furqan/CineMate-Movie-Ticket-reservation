@@ -247,9 +247,9 @@ body {
     justify-content: center;
 }
 
-.month li h6:nth-child(2):hover {
+/* .month li h6:nth-child(2):hover {
     background: #fd6565;
-}
+} */
 
 .r_title {
     padding-left: 16px;
@@ -302,13 +302,28 @@ body {
     justify-content: center;
 }
 
-.card li h6:nth-child(2):hover {
+/* .card li h6:nth-child(2):hover {
     background: #fd6565;
+} */
+
+/* .h6_active {
+    background: #fd6565 !important;
+} */
+/* Add these styles to your existing CSS */
+
+.month li .date.selected-date-color {
+    background-color: greenyellow; /* Change this color to your desired highlight color */
+    color: #000; /* Change this color to your desired text color */
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.h6_active {
-    background: #fd6565 !important;
-}
+/* .month li .date:hover {
+    background-color: #fd6565;
+    border-radius: 5px;
+    cursor: pointer;
+} */
+
 
 /* screen */
 .Screen {
@@ -326,12 +341,26 @@ body {
     letter-spacing: 5px;
     font-size: 20px;
     font-weight: 600;
+    /* display: none; */
 }
 
 .Chairs {
     width: 95%;
     margin: auto;
+    /* display: none; */
 
+}
+
+.card li.selected-time-color {
+    background-color: greenyellow;
+    color: #000;
+    border-radius: 20px;
+    
+}
+.month li.selected-date-color {
+    background-color: greenyellow; 
+    color: #000; 
+    border-radius: 20px; 
 }
 
 .row {
@@ -401,6 +430,11 @@ body {
     background: greenyellow !important;
     color: #000 !important;
 }
+.row li.selected {
+    background: greenyellow;
+    color: #000;
+}
+
 
 .details {
     width: 100%;
@@ -408,6 +442,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    /* display: none; */
 }
 
 .del_chairs {
@@ -482,8 +517,149 @@ body {
     background: #fd6565;
     color: aliceblue;
     font-size: 20px;
+    cursor: pointer;
+    transition: .3s linear;
+    /* display: none; */
+}
+
+.Next :hover {
+    color: #000;
+
+ }
+ 
+.tickets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 75%;
+    margin-top: 25px;
+
+    overflow-y: auto;
+   
+
+}
+
+.tickets::-webkit-scrollbar {
+    display: none;
+}
+
+.tics {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    overflow: hidden;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.barcoding,
+.tickects_details {
+    width: 100%;
+    height: 100%;
+
+}
+
+.barcoding {
+    width: 50%;
+    padding: 0px 40px 50px;
+    background: url(./images/Jumanji.jpg);
+    /* justify-content: center; */
+    /* justify-items: center; */
+    color: aliceblue;
+    align-items: center;
+    text-align: left;
+    
+}
+/* 
+.tickects_details {
+    background: url(/images/Jumanji.jpg) no-repeat center -1600px;
+
+} */
+
+.bar_card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+
+
+}
+
+.bar_card:nth-child(1) {
+    margin-top: 10px;
+
+}
+
+.barcoding h5 {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+}
+.barcoding h3 {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+}
+.tickects_details .type {
+    position: relative;
+    left: 25px;
+    top: 15px;
+    font-weight: 600;
+    color: #fff;
+
+}
+
+.pvr {
+    position: relative;
+    left: 25px;
+    top: 15px;
+    font-weight: 600;
+    color: lightblue;
+}
+
+.tickects_details h1 {
+    color: #fff;
+    position: relative;
+    left: 25px;
+    top: 60px;
+
+}
+
+.seats_del {
+    color: #fff;
+    position: relative;
+    left: 25px;
+    top: 60px;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(270deg, transparent, rgba(255, 255, 255, 0.3));
+    display: flex;
+    align-items: center;
+    
+   
+}
+.seat_cr {
+    width: 100px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+   
+}
+.seat_cr h6{
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .Video_player {
     max-width: 100%;
-}
+} 
