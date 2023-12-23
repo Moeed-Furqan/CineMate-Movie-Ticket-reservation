@@ -1,0 +1,41 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.navbar {
+  background-color: #343a40;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-color: #ffffff;
+}
+
+.jumbotron {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 2rem;
+  margin-top: 20px;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+h3 {
+  text-align: center;
+  color: #343a40;
+}
+.caroo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1025px;
+  margin: 0 auto;
+}
+.carousel-inner img {
+  width: 1500px;
+  height: 310px;
+}
