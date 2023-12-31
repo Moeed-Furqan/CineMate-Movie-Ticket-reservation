@@ -1,0 +1,29 @@
+body {
+    background-color: #f8f9fa;
+  }
+
+  .navbar {
+    background-color: #343a40;
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+  }
+
+  .navbar-dark .navbar-toggler-icon {
+    background-color: #ffffff;
+  }
+
+  .jumbotron {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 2rem;
+    margin-top: 20px;
+  }
+
+  .container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    }
